@@ -1,0 +1,142 @@
+/* Vernacular Branding — follows the Brand Guidelines (First Edition, Dec 2025):
+   Blue #005AA9 · Yellow #F4ED65 · Black · White. Poppins (wordmark/headings/labels) + Noto Sans (body). */
+:root{--blue:#005AA9;--yellow:#F4ED65;--black:#000;--white:#fff;--mid:#555}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Noto Sans',sans-serif;background:var(--white);color:var(--black);font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--blue)}
+.skip{position:absolute;left:-999px;top:0;background:var(--yellow);color:var(--black);padding:10px 16px;z-index:999;font-family:'Poppins',sans-serif;font-weight:700}
+.skip:focus{left:0}
+:focus-visible{outline:3px solid var(--yellow);outline-offset:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+/* wordmark: Poppins Light lowercase + Poppins Black uppercase — never equalised */
+.mark{font-family:'Poppins',sans-serif;line-height:1;text-decoration:none;display:inline-flex;gap:.28em;align-items:baseline;white-space:nowrap}
+.mark .thin,.thin{font-weight:300}
+.mark .bold,.bold{font-weight:900}
+/* nav — black bar, yellow rule */
+.bar{position:sticky;top:0;z-index:200;background:var(--black);border-bottom:3px solid var(--yellow)}
+.bar-in{max-width:1200px;margin:0 auto;padding:0 48px;display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:58px}
+.bar .mark{font-size:20px;color:var(--white)}
+.bar .mark .bold{color:var(--yellow)}
+.menu summary{display:none}
+.menu nav{display:flex;align-items:center;gap:2px;flex-wrap:wrap;justify-content:flex-end}
+.menu nav a{font-family:'Poppins',sans-serif;font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,.7);text-decoration:none;padding:20px 11px 17px;border-bottom:3px solid transparent;margin-bottom:-3px;transition:color .2s}
+.menu nav a:hover,.menu nav a[aria-current]{color:var(--yellow);border-bottom-color:var(--yellow)}
+.menu nav a.buy{background:var(--yellow);color:var(--black);margin:0 0 0 10px;padding:10px 16px;border:0}
+.menu nav a.buy:hover{background:var(--white);color:var(--black)}
+/* layout */
+.wrap{max-width:1200px;margin:0 auto;padding:0 48px}
+.narrow{max-width:820px}
+.sec{padding:80px 0;background:var(--white)}
+.sec+.sec:not(.blue):not(.black){border-top:1px solid rgba(0,90,169,.15)}
+.sec.blue{background:var(--blue);color:var(--white)}
+.sec.black{background:var(--black);color:var(--white)}
+.two{display:grid;grid-template-columns:1.15fr .85fr;gap:64px;align-items:center}
+.two.top{align-items:start}
+.two.top .cover{position:sticky;top:90px}
+/* type */
+h1,h2,h3,h4{font-family:'Poppins',sans-serif;line-height:1.2}
+.kick{font-family:'Poppins',sans-serif;font-size:10px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:var(--blue);margin-bottom:14px;display:block}
+.blue .kick,.black .kick,.phero .kick,.hero .kick{color:var(--yellow)}
+.sec h2{font-size:clamp(24px,3vw,38px);font-weight:700;border-left:5px solid var(--yellow);padding-left:18px;margin-bottom:32px}
+.sec h2 .thin{font-weight:300}
+.blue h2 .bold,.black h2 .bold{color:var(--yellow)}
+.lead{font-family:'Poppins',sans-serif;font-weight:300;font-size:clamp(22px,2.6vw,32px);line-height:1.35;margin-bottom:20px}
+.lead-w{font-size:19px;max-width:760px;margin-bottom:36px;color:var(--white)}
+.prose h3{font-size:18px;font-weight:700;color:var(--blue);margin:36px 0 12px}
+.prose h4{font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--blue);margin:28px 0 8px}
+.prose p{margin-bottom:16px}
+.prose ul,.prose ol{padding-left:22px;margin:0 0 20px}
+.prose li{margin-bottom:8px}
+.prose li::marker{color:var(--blue)}
+.prose strong{font-weight:700}
+.prose blockquote{border-left:5px solid var(--blue);padding:8px 0 8px 22px;margin:24px 0;font-style:italic}
+.blue .prose a,.blue a{color:var(--yellow)}
+.prose table{border-collapse:collapse;width:100%;margin:20px 0;font-size:14px}
+.prose td,.prose th{border:1px solid rgba(0,90,169,.3);padding:10px 12px;text-align:left}
+.fine{margin-top:36px;font-size:14px;opacity:.85;max-width:760px}
+.caption{margin-top:14px;font-size:13px;color:var(--mid);font-style:italic}
+/* buttons */
+.btn{display:inline-block;font-family:'Poppins',sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;text-decoration:none;padding:16px 26px;border:2px solid transparent;transition:background .2s,color .2s,border-color .2s;margin:0 8px 10px 0;line-height:1.3;background:var(--blue);color:var(--white)}
+.btn:hover{background:var(--black)}
+.btn-blue{background:var(--blue);color:var(--white)!important}.btn-blue:hover{background:var(--black)}
+.btn-yellow{background:var(--yellow);color:var(--black)!important}.btn-yellow:hover{background:var(--white)}
+.btn-line{background:transparent;border-color:var(--blue);color:var(--blue)!important}.btn-line:hover{background:var(--blue);color:var(--white)!important}
+.btn-line-w{background:transparent;border-color:var(--white);color:var(--white)!important}.btn-line-w:hover{background:var(--white);color:var(--blue)!important}
+.blue a.btn:not(.btn-line-w),.black a.btn:not(.btn-line-w){background:var(--yellow);color:var(--black)!important}
+.blue a.btn:not(.btn-line-w):hover,.black a.btn:not(.btn-line-w):hover{background:var(--white)}
+.blue .prose li::marker,.black li::marker{color:var(--yellow)}
+.cta{margin-top:28px}
+/* hero — mirrors the book cover: blue field, stamp, wordmark, vertical subtitle */
+.hero{background:var(--blue);color:var(--white);position:relative;overflow:hidden;min-height:min(calc(100vh - 61px),780px);display:flex;flex-direction:column;justify-content:space-between;padding:56px 0 48px}
+.hero-stamp{width:clamp(130px,20vw,280px);height:auto;margin-left:64px}
+.hero-v{position:absolute;right:28px;bottom:48px;writing-mode:vertical-rl;transform:rotate(180deg);font-family:'Poppins',sans-serif;font-weight:700;text-transform:uppercase;font-size:clamp(11px,1.7vw,22px);letter-spacing:.06em;line-height:1;white-space:nowrap}
+.hero-in{padding:0 96px 0 64px}
+.hero-by{font-family:'Poppins',sans-serif;font-weight:300;font-size:clamp(14px,1.6vw,20px);margin-bottom:18px}
+.hero-by em{opacity:.7}
+.hero-mark{font-size:clamp(46px,10.5vw,158px);color:var(--white)}
+.hero-mark .bold{color:var(--yellow)}
+.hero-mark{display:flex;flex-wrap:wrap;gap:0 .26em;align-items:baseline}
+.cover img{width:100%;box-shadow:0 0 0 1px rgba(0,0,0,.08)}
+/* inner page hero */
+.phero{background:var(--blue);color:var(--white);padding:76px 0 60px}
+.phero h1{font-size:clamp(36px,6vw,76px);color:var(--white)}
+.phero h1 .bold{color:var(--yellow)}
+.psub{margin-top:18px;font-style:italic;font-size:19px;color:rgba(255,255,255,.85);max-width:760px}
+/* cards */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2px;background:var(--blue);margin-top:8px}
+.black .cards{background:var(--blue)}
+.card{background:var(--black);color:rgba(255,255,255,.78);padding:30px}
+.card h3{font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--yellow);margin-bottom:12px}
+.card p{font-size:14px;line-height:1.7;margin-bottom:14px}
+.card .tag{font-family:'Poppins',sans-serif;font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--white);opacity:.7}
+.card h3.big{font-size:24px;letter-spacing:0;text-transform:none;color:var(--white);font-weight:900}
+.cards.two{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+/* galleries */
+.masonry{column-count:3;column-gap:10px}
+.masonry figure{break-inside:avoid;margin:0 0 10px}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px;margin:28px 0}
+.gallery figure{margin:0}
+.gallery img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/3}
+.embed{position:relative;aspect-ratio:16/9;margin:28px 0;background:var(--black)}
+.embed iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+/* spec list */
+.spec{display:grid;grid-template-columns:max-content 1fr;gap:0;border-top:2px solid var(--blue);margin-top:12px}
+.spec dt,.spec dd{padding:10px 0;border-bottom:1px solid rgba(0,90,169,.2);font-size:15px}
+.spec dt{font-family:'Poppins',sans-serif;font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--blue);padding-right:32px;align-self:center}
+.price{font-family:'Poppins',sans-serif;font-weight:900;font-size:44px;line-height:1;margin:6px 0 4px}
+.smap{list-style:none;padding:0;font-size:18px}.smap li{padding:8px 0;border-bottom:1px solid rgba(0,90,169,.15)}
+/* footer — black, yellow labels */
+.foot{background:var(--black);color:rgba(255,255,255,.55);padding:64px 0 48px}
+.foot-in{max-width:1200px;margin:0 auto;padding:0 48px;display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr 1.3fr;gap:36px;align-items:start}
+.foot .mark{font-size:24px;color:var(--white);margin-bottom:16px}.foot .mark .bold{color:var(--yellow)}
+.foot h4{font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--yellow);margin-bottom:12px}
+.foot p,.foot li{font-size:13px;line-height:2}
+.foot p{margin-bottom:12px}
+.foot ul{list-style:none}
+.foot a{color:rgba(255,255,255,.65);text-decoration:none}.foot a:hover{color:var(--yellow)}
+@media(max-width:900px){
+  .wrap,.bar-in,.foot-in{padding-left:20px;padding-right:20px}
+  .bar-in{flex-wrap:wrap;min-height:54px}
+  .menu summary{display:block;cursor:pointer;list-style:none;font-family:'Poppins',sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--yellow);padding:16px 0}
+  .menu summary::-webkit-details-marker{display:none}
+  .menu nav{flex-direction:column;align-items:stretch;padding-bottom:16px}
+  .menu nav a{padding:12px 0;margin:0;border:0;border-bottom:1px solid rgba(255,255,255,.12)}
+  .menu nav a.buy{margin-top:12px;text-align:center}
+  .menu{width:auto}
+  .bar-in:has(details[open]){display:block}
+  .sec{padding:56px 0}
+  .two{grid-template-columns:1fr;gap:36px}
+  .hero{padding:32px 0 32px;min-height:auto}
+  .hero-stamp{margin-left:20px;width:120px}
+  .hero-in{padding:56px 60px 0 20px}
+  .hero-v{right:16px;bottom:32px}
+  .masonry{column-count:2}
+  .foot-in{grid-template-columns:1fr 1fr}
+  .foot-brand{grid-column:1/-1}
+  .spec{grid-template-columns:1fr}
+  .spec dt{border-bottom:0;padding-bottom:0}
+}
+@media(max-width:520px){.masonry{column-count:1}.foot-in{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
