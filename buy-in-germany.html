@@ -28,8 +28,21 @@
 <section class="sec"><div class="wrap two top">
   <div class="prose"><p class="lead">For readers based in Germany, distribution and fulfilment are managed directly from Germany.</p>
   <p class="price">€ 45.00</p><p>Limited hardcover research archive · in-person collection € 45.00 · standard tracked shipping included € 51.00.</p>
-  <p class="cta"><a class="btn" href="https://vernacularbranding.in/buy-in-germany/">Continue to secure checkout →</a></p>
-  <p class="caption">Sales are currently restricted to Germany. Your billing address must be registered in Germany; orders from outside Germany cannot be processed at this time. Checkout is processed by Stripe.</p>
+  <div class="checkout" id="de-checkout">
+    <div class="matrix"><div><b>Germany</b><span>Dispatch</span></div><div><b>5–10 days</b><span>Delivery</span></div><div><b>Tracked</b><span>Shipping</span></div></div>
+    <label for="de-country">To comply with German tax regulations (§19 UStG), please confirm your billing and tax residency country before proceeding:</label>
+    <select id="de-country"><option value="">Select billing country…</option><option value="DE">Germany (Deutschland)</option><option value="other">Outside Germany</option></select>
+    <p class="state" data-state="empty"><span class="btn btn-off" aria-disabled="true">Select country to continue</span></p>
+    <p class="state" data-state="DE" hidden><a class="btn" href="https://buy.stripe.com/aFa9AT2fp7ne69rbUi1kA01" target="_blank" rel="noopener noreferrer">Proceed to Stripe checkout →</a></p>
+    <div class="state" data-state="other" hidden><p><span class="btn btn-off" aria-disabled="true">Not available outside Germany</span></p><p class="note">Sales are currently restricted to Germany. Your billing address must be registered in Germany; orders from outside Germany cannot be processed at this time. For other requests, write to <a href="mailto:contact@vernacularbranding.in">contact@vernacularbranding.in</a>.</p></div>
+    <noscript><p class="note">Please enable JavaScript to continue, or write to <a href="mailto:contact@vernacularbranding.in">contact@vernacularbranding.in</a> to order.</p></noscript>
+    <p class="note">Encrypted, secure checkout processing powered by Stripe.</p>
+  </div>
+  <script>
+  (function(){var s=document.getElementById('de-country'),st=document.querySelectorAll('#de-checkout .state');
+  function show(v){var k=v==='DE'?'DE':v==='other'?'other':'empty';st.forEach(function(e){e.hidden=e.getAttribute('data-state')!==k});}
+  s.addEventListener('change',function(){show(this.value)});show(s.value);})();
+  </script>
   <h3>Fulfilment</h3><p>Orders are securely packaged and dispatched within 2–3 working days. Delivery takes 5–10 working days within Germany; tracking details are provided upon shipment. Fulfilment starts once online payment has cleared. For bank transfers or alternative payment options, write to <a href="mailto:contact@vernacularbranding.in">contact@vernacularbranding.in</a>. PayPal on request.</p>
   <h3>Tax notice</h3><p>No VAT is charged or itemised on the invoice, in accordance with the small business status under §19 UStG (German Value Added Tax Act).</p>
   <h3>Right of withdrawal &amp; returns</h3><p>Under German consumer law (§ 312g BGB), buyers residing in Germany may withdraw from the purchase within 14 days of receiving the book. To start a return, notify us by email. Return logistics and shipping costs remain the responsibility of the customer.</p>

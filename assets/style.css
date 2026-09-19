@@ -107,6 +107,18 @@ h1,h2,h3,h4{font-family:'Poppins',sans-serif;line-height:1.2}
 .spec dt{font-family:'Poppins',sans-serif;font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--blue);padding-right:32px;align-self:center}
 .price{font-family:'Poppins',sans-serif;font-weight:900;font-size:44px;line-height:1;margin:6px 0 4px}
 .smap{list-style:none;padding:0;font-size:18px}.smap li{padding:8px 0;border-bottom:1px solid rgba(0,90,169,.15)}
+/* Germany checkout (static Stripe Payment Link with a billing-country gate) */
+.checkout{border:2px solid var(--blue);padding:28px;margin:28px 0}
+.checkout .matrix{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--blue);margin-bottom:24px}
+.checkout .matrix div{background:var(--white);padding:16px;text-align:center}
+.checkout .matrix b{display:block;font-family:'Poppins',sans-serif;font-weight:900;font-size:18px}
+.checkout .matrix span{font-family:'Poppins',sans-serif;font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--blue)}
+.checkout label{display:block;font-size:14px;margin-bottom:10px}
+.checkout select{width:100%;padding:14px;font:inherit;border:2px solid var(--blue);background:var(--white);color:var(--black);margin-bottom:16px}
+.checkout .state[hidden]{display:none}
+.checkout .note{font-size:13px;color:var(--mid);font-style:italic;margin:12px 0 0}
+.btn.btn-off{background:transparent;border-color:rgba(0,0,0,.25);color:var(--mid)!important;cursor:not-allowed}
+.btn.btn-off:hover{background:transparent}
 /* footer — black, yellow labels */
 .foot{background:var(--black);color:rgba(255,255,255,.55);padding:64px 0 48px}
 .foot-in{max-width:1200px;margin:0 auto;padding:0 48px;display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr 1.3fr;gap:36px;align-items:start}
