@@ -119,6 +119,13 @@ h1,h2,h3,h4{font-family:'Poppins',sans-serif;line-height:1.2}
 .t-black{background:var(--black);color:rgba(255,255,255,.75)}.t-black h3{color:var(--yellow)}
 .t-white{background:var(--white);color:var(--black)}.t-white h3{color:var(--blue)}
 .t-blue{background:var(--blue);color:var(--white)}.t-blue h3{color:var(--yellow)}
+a.tile{display:block;text-decoration:none;transition:filter .2s}
+a.tile:hover{filter:brightness(1.08)}
+.tile .go{display:block;margin-top:14px;font-family:'Poppins',sans-serif;font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase}
+.t-yellow{background:var(--yellow);color:var(--black)}.t-yellow h3{color:var(--black)}
+.t-white .go{color:var(--blue)}.t-blue .go,.t-black .go{color:var(--yellow)}
+.social .tile{min-height:170px}
+.social .t-white{box-shadow:inset 0 0 0 2px var(--blue)}
 /* voice grid (white cells, blue rules) */
 .vgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:2px;background:var(--yellow);margin:8px 0 2px}
 .vc{background:var(--white);color:var(--black);padding:26px 24px}
