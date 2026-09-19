@@ -11,53 +11,59 @@
 <meta property="og:type" content="website">
 <link rel="icon" type="image/svg+xml" href="assets/icon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&family=Poppins:wght@100;300;600;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
+<script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="bar">
   <div class="bar-in">
-  <a class="mark" href="./" aria-label="Vernacular Branding — home"><span class="thin">vernacular</span><span class="bold">BRANDING</span></a>
-  <details class="menu"><summary>Menu</summary>
-  <nav aria-label="Primary"><a href="about-the-project">The Book</a><a href="about-the-authors">Authors</a><a href="micro-exhibition">Micro-Exhibition</a><a href="spot-a-sign">Spot a Sign</a><a href="public-reception">Public Reception</a><a href="press-kit">Press Kit</a><a href="vb-contributors">Contributors</a><a href="contact">Contact</a><a class="buy" href="buy-the-book">Buy the book</a></nav></details>
+    <a class="mark" href="./" aria-label="Vernacular Branding — home"><span class="thin">vernacular</span><span class="bold">BRANDING</span></a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav"><span>Menu</span></button>
+    <nav id="site-nav" aria-label="Primary"><a href="about-the-project">The Book</a><a href="about-the-authors">Authors</a><a href="micro-exhibition">Micro-Exhibition</a><a href="spot-a-sign">Spot a Sign</a><a href="public-reception">Public Reception</a><a href="press-kit">Press Kit</a><a href="vb-contributors">Contributors</a><a href="contact">Contact</a><a class="buy" href="buy-the-book">Buy the book</a></nav>
   </div>
 </header>
 <main id="main">
 
 <section class="hero">
-  <img class="hero-stamp" src="assets/stamp-yellow.svg" alt="" width="280" height="280">
   <p class="hero-v" aria-hidden="true">Reading Identity Through Design and Visibility</p>
-  <div class="hero-in">
-    <p class="hero-by">Bhuleshwar Mate <em>Arun</em> &nbsp;&nbsp; Kaushambi Mate</p>
-    <h1 class="mark hero-mark"><span class="thin">vernacular</span><span class="bold">BRANDING</span></h1>
-    <p class="sr">Reading Identity Through Design and Visibility</p>
+  <div class="hero-grid">
+    <div class="hero-text">
+      <p class="kick">First Edition · December 2025 · ISBN 978-93-344-2686-1</p>
+      <h1 class="mark hero-mark"><span class="thin">vernacular</span><span class="bold">BRANDING</span></h1>
+      <p class="hero-sub">Reading Identity Through Design and Visibility</p>
+      <p class="hero-by">Prof. Bhuleshwar (Arun) Mate <span>&amp;</span> Kaushambi Mate</p>
+      <p class="hero-desc">A seminal documentation of India’s informal visual landscape — five decades of hand-painted typography, improvised signage and everyday branding systems, gathered in a hardcover research archive.</p>
+      <p class="hero-cta"><a class="btn btn-yellow" href="buy-the-book">Buy the book</a><a class="btn btn-line-w" href="about-the-project">Explore the research</a><a class="btn btn-line-w" href="press-kit">Press kit</a></p>
+      <dl class="hero-facts"><div><dt>Format</dt><dd>Hardcover · 254 × 254 mm · 200 pp</dd></div><div><dt>India</dt><dd>₹ 2,500 · <a href="buy-in-india">Buy in India</a></dd></div><div><dt>Germany</dt><dd>€ 45 · <a href="buy-in-germany">Buy in Germany</a></dd></div><div><dt>Also</dt><dd><a href="micro-exhibition">Micro-Exhibition</a> · <a href="spot-a-sign">Spot a Sign</a></dd></div></dl>
+    </div>
+    <img class="hero-stamp" src="assets/stamp-yellow.svg" alt="" width="420" height="420">
   </div>
 </section>
-<section class="sec"><div class="wrap two">
-  <div class="prose"><p class="lead">A seminal documentation of India’s informal visual landscape.</p>
-  <p>Spanning five decades of hand-painted typography, improvised signage, and everyday branding systems.</p>
-  <p class="cta"><a class="btn btn-blue" href="about-the-project">Explore the research</a><a class="btn btn-line" href="buy-the-book">Buy the book</a></p></div>
+<section class="sec"><div class="wrap two top">
+  <div class="prose"><p class="kick">The book</p><p class="lead">A richly illustrated, tactile object.</p>
+  <p>This hardcover edition brings together extensive fieldwork, archival documentation, and insightful essays — five decades of Prof. Bhuleshwar Mate’s street archive, read through contemporary design research.</p>
+  <dl class="spec"><dt>Binding</dt><dd>Hardcover, cover with gold foil embossing</dd><dt>Size</dt><dd>254 × 254 mm · 200 pp</dd><dt>Paper</dt><dd>170gsm Indian Art Matt paper</dd><dt>Language</dt><dd>English</dd><dt>Published</dt><dd>First Edition, December 2025</dd><dt>ISBN</dt><dd>978-93-344-2686-1</dd></dl>
+  <p class="cta"><a class="btn btn-blue" href="about-the-project">About the project</a><a class="btn btn-line" href="buy-the-book">Buy the book</a></p></div>
   <figure class="cover"><img src="assets/img/vb_book-cover_image-1.jpg" alt="Vernacular Branding hardcover book, blue cover with gold foil" loading="eager"></figure>
 </div></section>
-<section class="sec blue"><div class="wrap narrow prose">
-  <p class="kick">01 · The work</p>
-  <h2><span class="thin">From the Street</span> <span class="bold">to the Studio</span></h2>
+<section class="sec blue"><div class="wrap split"><div class="split-h"><p class="kick">01 · The work</p><h2><span class="thin">From the Street</span> <span class="bold">to the Studio</span></h2></div><div class="split-b prose">
   <p>Vernacular Branding is an intergenerational collaboration between <strong>Prof. Bhuleshwar Mate</strong> and <strong>Kaushambi Mate</strong>.</p>
   <p>The work bridges:</p>
   <ul><li>decades of artistic and pedagogical practice in India</li><li>and contemporary architectural and design research in Europe</li></ul>
   <p>It translates lived visual culture into a structured design discourse.</p>
   <p>While contemporary branding moves toward global uniformity, India’s vernacular landscape remains rooted in local knowledge, improvisation, and manual skill. This project documents the visual identity systems of everyday life — capturing a disappearing culture of sign-making, typography, and informal communication.</p>
   <p class="cta"><a class="btn" href="about-the-project">About the project</a><a class="btn btn-line-w" href="about-the-authors">About the authors</a></p>
-</div></section>
+</div></div></section>
 <section class="sec"><div class="wrap"><p class="kick">02 · The archive</p><h2><span class="thin">Five decades</span> <span class="bold">on the street</span></h2>
 <div class="masonry"><figure><img src="assets/img/vb_book-cover_image-1.jpg" alt="Vernacular Branding — book and archive photograph" loading="lazy"></figure><figure><img src="assets/img/vb-page-101-image.jpg" alt="Vernacular Branding — book and archive photograph" loading="lazy"></figure><figure><img src="assets/img/vb_book-cover_image-3.jpg" alt="Vernacular Branding — book and archive photograph" loading="lazy"></figure><figure><img src="assets/img/vb-page-19-image.jpg" alt="Vernacular Branding — book and archive photograph" loading="lazy"></figure><figure><img src="assets/img/vb_book-cover_image-2.jpg" alt="Vernacular Branding — book and archive photograph" loading="lazy"></figure><figure><img src="assets/img/p1712370.jpg" alt="Vernacular Branding — book and archive photograph" loading="lazy"></figure><figure><img src="assets/img/p1712225.jpg" alt="Vernacular Branding — book and archive photograph" loading="lazy"></figure><figure><img src="assets/img/p1712235.jpg" alt="Vernacular Branding — book and archive photograph" loading="lazy"></figure><figure><img src="assets/img/img_20260102_082453_365.jpg" alt="Vernacular Branding — book and archive photograph" loading="lazy"></figure><figure><img src="assets/img/P1712362-1.jpg" alt="Vernacular Branding — book and archive photograph" loading="lazy"></figure><figure><img src="assets/img/P1712377.jpg" alt="Vernacular Branding — book and archive photograph" loading="lazy"></figure><figure><img src="assets/img/P1712351-1.jpg" alt="Vernacular Branding — book and archive photograph" loading="lazy"></figure></div>
 <p class="caption">Institutional presence: formally launched at the Government College of Art and Design (GCAD), Nagpur, on the occasion of the institution’s 50th anniversary.</p></div></section>
-<section class="sec black"><div class="wrap">
+<section class="sec blue reception"><div class="wrap">
   <p class="kick">03 · Reception</p>
   <h2><span class="thin">Recognized</span> <span class="bold">and Presented</span></h2>
   <p class="lead-w">Vernacular Branding has been recognized by leading academic institutions, administrative bodies, and the national press as a vital archive of India’s visual culture.</p>
-  <div class="cards">
+  <div class="cards light">
     <div class="card"><h3>Expert contributions</h3><p>Supported by a collaborative “Open Call,” featuring insights from a diverse network of practitioners and researchers.</p></div>
     <div class="card"><h3>Administrative recognition</h3><p>Endorsed by high-ranking officials, including the Additional Divisional Commissioner of Nagpur, Dr. Madhavi Khode-Chaware, and the Director of the South Central Zone Cultural Centre (SCZCC), Aastha Godbole.</p></div>
     <div class="card"><h3>Media acclaim</h3><p>Featured in prominent news outlets such as Dainik Bhaskar, Lokmat Samachar, and Lokshahi Varta, which highlighted the book’s role in “preserving the visual language of Indian streets”.</p></div>
@@ -73,12 +79,24 @@
     <div class="foot-brand"><p class="mark"><span class="thin">vernacular</span><span class="bold">BRANDING</span></p>
     <p>Reading Identity Through Design and Visibility</p>
     <p>First Edition · December 2025<br>ISBN 978-93-344-2686-1</p>
-    <p>Prof. Bhuleshwar (Arun) Mate<br>Kaushambi Mate</p></div>
+    <p>Authors: Prof. Bhuleshwar (Arun) Mate &amp; Kaushambi Mate</p>
+    <p><a href="https://www.instagram.com/vernacularbranding/" target="_blank" rel="noopener">@vernacularbranding ↗</a></p></div>
     <div><h4>Explore</h4><ul><li><a href="about-the-project">The Book</a></li><li><a href="about-the-authors">Authors</a></li><li><a href="micro-exhibition">Micro-Exhibition</a></li><li><a href="spot-a-sign">Spot a Sign</a></li><li><a href="public-reception">Public Reception</a></li><li><a href="press-kit">Press Kit</a></li><li><a href="vb-contributors">Contributors</a></li><li><a href="buy-the-book">Buy the book</a></li><li><a href="sitemap">Sitemap</a></li></ul></div>
-    <div><h4>India</h4><ul><li><a href="buy-in-india">Buy in India</a></li><li><a href="legal-notice-india">Legal notice</a></li><li><a href="privacy-policy-india">Privacy policy</a></li><li><a href="terms-and-conditions-india">Terms &amp; conditions</a></li></ul></div>
-    <div><h4>Deutschland</h4><ul><li><a href="buy-in-germany">Buy in Germany</a></li><li><a href="legal-notice-de">Impressum</a></li><li><a href="datenschutz-de">Datenschutz</a></li><li><a href="agb-de">AGB</a></li></ul></div>
-    <div><h4>Contact</h4><ul><li><a href="mailto:contact@vernacularbranding.in">contact@vernacularbranding.in</a></li><li><a href="https://www.instagram.com/vernacularbranding/" target="_blank" rel="noopener">@vernacularbranding ↗</a></li><li>Envisionar Design Atelier, Nagpur</li><li>Telgte, NRW, Germany</li></ul></div>
+    <div class="foot-region"><h4>India</h4>
+      <p class="who"><strong>Envisionar Design Atelier</strong>, Nagpur<br><span>Prof. Bhuleshwar Mate’s design studio and imprint. Books in India are sold by Envisionar Design Atelier.</span></p>
+      <p class="who"><strong>Contact person:</strong><br>Prof. Bhuleshwar (Arun) Mate, co-author<br>C-7, Neeri Road, Barlinge Layout, Laxminagar, Nagpur, MH 440022, India<br>+91 712 222 8989<br><a href="mailto:contact@vernacularbranding.in">contact@vernacularbranding.in</a><br><a href="https://www.instagram.com/atelier_envisionar/" target="_blank" rel="noopener">@atelier_envisionar ↗</a></p>
+      <ul><li><a href="buy-in-india">Buy in India</a></li><li><a href="legal-notice-india">Legal notice</a></li><li><a href="privacy-policy-india">Privacy policy</a></li><li><a href="terms-and-conditions-india">Terms &amp; conditions</a></li></ul></div>
+    <div class="foot-region"><h4>Deutschland</h4>
+      <p class="who"><strong>Germany</strong><br><span>Books in Germany are distributed directly from Telgte, NRW.</span></p>
+      <p class="who"><strong>Contact person:</strong><br>Kaushambi Mate, co-author<br>Telgte, NRW, Germany<br><a href="mailto:contact@vernacularbranding.in">contact@vernacularbranding.in</a></p>
+      <ul><li><a href="buy-in-germany">Buy in Germany</a></li><li><a href="legal-notice-de">Impressum</a></li><li><a href="datenschutz-de">Datenschutz</a></li><li><a href="agb-de">AGB</a></li></ul></div>
   </div>
+  <p class="foot-c">Design by <a href="https://envisionar.in" target="_blank" rel="noopener">Envisionar Design Atelier</a></p>
 </footer>
+<script>
+(function(){var b=document.querySelector('.menu-btn'),n=document.getElementById('site-nav');
+b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o);b.classList.toggle('open',o)});
+n.addEventListener('click',function(e){if(e.target.tagName==='A'){n.classList.remove('open');b.setAttribute('aria-expanded','false')}});})();
+</script>
 </body>
 </html>
