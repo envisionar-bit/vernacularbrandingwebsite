@@ -9,4 +9,4 @@ Signature Blue `#005AA9`, Highlight Yellow `#F4ED65`, Black, White · Poppins (w
 - `assets/img`, `assets/docs`, `assets/press` — images, PDFs, press-kit files
 
 **Status: preview.** Pages carry `noindex` and orders still complete on the existing live checkouts
-(India: WooCommerce + Shiprocket, Germany: Stripe). Remove the `robots` meta line from each page before pointing the domain here.
+(India: WooCommerce + Shiprocket, Germany: Stripe). Remove the `robots` meta line from each page before pointing the domain here — except `thank-you/index.html`, which must stay `noindex` permanently (it is the post-purchase page).

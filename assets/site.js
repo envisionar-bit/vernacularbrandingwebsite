@@ -53,3 +53,12 @@ document.addEventListener('DOMContentLoaded',function(){
       .catch(function(){btn.disabled=false;say('Could not reach the directory. Please try again in a moment.',true)});
   });
 });
+
+/* Thank-you page: show region-specific notes when the link carries ?r=in or ?r=de (otherwise show both) */
+document.addEventListener('DOMContentLoaded',function(){
+  var els=document.querySelectorAll('[data-region]');if(!els.length)return;
+  var r=(new URLSearchParams(location.search).get('r')||'').toLowerCase();
+  if(r!=='in'&&r!=='de')return;
+  els.forEach(function(e){if(e.getAttribute('data-region')!==r)e.hidden=true});
+  document.querySelectorAll('[data-region-only="none"]').forEach(function(e){e.hidden=true});
+});
