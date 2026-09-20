@@ -127,6 +127,9 @@ a.tile:hover{filter:brightness(1.08)}
 .t-white .go{color:var(--blue)}.t-blue .go,.t-black .go{color:var(--yellow)}
 .social .tile{min-height:170px}
 .social .t-white{box-shadow:inset 0 0 0 3px var(--blue)}
+.split-b .tiles+p{margin-top:20px}
+/* yellow frame on the light tile (authors page) */
+.tiles.framed .t-white{box-shadow:inset 0 0 0 3px var(--yellow)}
 /* voice grid (white cells, blue rules) */
 .vgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:2px;background:var(--yellow);margin:8px 0 2px}
 .vc{background:var(--white);color:var(--black);padding:26px 24px}
