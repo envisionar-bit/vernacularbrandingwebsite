@@ -91,6 +91,7 @@ h1,h2,h3,h4{font-family:'Poppins',sans-serif;line-height:1.2}
 .cover img{width:100%;box-shadow:0 0 0 1px rgba(0,0,0,.08)}
 .phero{background:var(--blue);color:var(--white);padding:clamp(44px,5.5vw,84px) 0 clamp(32px,3.6vw,56px)}
 .phero h1{font-size:clamp(32px,5.2vw,72px);color:var(--white)}.phero h1 .bold{color:var(--yellow)}
+.phero h1 .h1-sub{display:block;font-weight:300;font-size:.5em;margin-top:.35em}
 .psub{margin-top:14px;font-style:italic;font-size:clamp(15px,1.3vw,19px);color:rgba(255,255,255,.88);max-width:78ch}
 /* spec strip (guidelines' spec panel) */
 .specs{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:20px 28px;background:var(--off);padding:28px clamp(20px,2.4vw,36px);margin-top:clamp(32px,4vw,56px)}
@@ -161,8 +162,18 @@ a.tile:hover{filter:brightness(1.08)}
 .callout .attr{display:block;font-family:'Poppins',sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--yellow);margin-top:12px;font-style:normal}
 .callout-sec{padding:clamp(20px,3vw,40px) 0}
 .qgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:2px;background:var(--yellow);padding-top:0}
+.qgrid.four{grid-template-columns:repeat(4,1fr)}
+@media(max-width:1100px){.qgrid.four{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:640px){.qgrid.four{grid-template-columns:1fr}}
 .qc{padding:clamp(22px,2.6vw,36px);font-size:15px;line-height:1.7}
 .qc p{margin-bottom:10px}.qc p:last-child{margin:0}
+.qc h4{font-family:'Poppins',sans-serif;font-size:14px;font-weight:600;line-height:1.35;margin-bottom:10px}
+.qc .tag{font-family:'Poppins',sans-serif;font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;opacity:.75;margin-bottom:8px}
+.qc a{color:var(--yellow);font-weight:600}
+.qc-y{background:var(--yellow);color:var(--black)}.qc-y a.btn{background:var(--black);color:var(--white)!important}.qc-y a.btn:hover{background:var(--blue)}
+.callout h4{font-family:'Poppins',sans-serif;font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--yellow);margin-bottom:12px}
+.callout p{margin-bottom:12px}
+.actions.dl .btn{margin:0 10px 12px 0}
 .qc-b{background:var(--blue);color:var(--white)}.qc-b strong{color:var(--yellow)}
 .qc-k{background:var(--black);color:rgba(255,255,255,.85)}.qc-k strong{color:var(--yellow)}
 .qc em{font-style:italic}
@@ -209,6 +220,20 @@ a.tile:hover{filter:brightness(1.08)}
 .checkout select{width:100%;padding:13px;font:inherit;border:2px solid var(--blue);background:var(--white);color:var(--black);margin-bottom:16px}
 .checkout .state[hidden]{display:none}.checkout .note{font-size:13px;color:var(--mid);font-style:italic;margin:12px 0 0}
 .btn.btn-off{background:transparent;border-color:rgba(0,0,0,.25);color:var(--mid)!important;cursor:not-allowed}.btn.btn-off:hover{background:transparent}
+/* slideshow (looping, arrows + dots) */
+.slides{position:relative;width:100%}
+.sl-view{position:relative;aspect-ratio:var(--ratio,4/3);overflow:hidden;background:var(--off)}
+.slide{position:absolute;inset:0;margin:0;opacity:0;visibility:hidden;transition:opacity .7s ease,visibility .7s}
+.slide.is-on{opacity:1;visibility:visible}
+.slide img{width:100%;height:100%;object-fit:cover}
+.slides.contain .slide img{object-fit:contain}
+.sl-prev,.sl-next{position:absolute;top:50%;transform:translateY(-50%);width:44px;height:64px;background:rgba(255,255,255,.88);color:var(--blue);border:0;font-family:'Poppins',sans-serif;font-size:34px;line-height:1;cursor:pointer;padding-bottom:6px}
+.sl-prev{left:0}.sl-next{right:0}
+.sl-prev:hover,.sl-next:hover{background:var(--yellow);color:var(--black)}
+.sl-dots{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;padding-top:14px}
+.sl-dot{width:10px;height:10px;border-radius:50%;border:0;background:rgba(0,0,0,.22);cursor:pointer;padding:0}
+.sl-dot.is-on{background:var(--blue)}
+.two.top .slides{position:sticky;top:84px}
 /* footer — four columns */
 .foot{background:var(--black);color:rgba(255,255,255,.62);padding:clamp(44px,5vw,72px) 0 28px;border-top:6px solid var(--yellow)}
 .foot-in{padding:0 var(--gut);display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(24px,3vw,56px);align-items:start}
