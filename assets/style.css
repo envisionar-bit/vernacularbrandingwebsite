@@ -15,6 +15,7 @@ strong{font-weight:700}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
 .mark{font-family:'Poppins',sans-serif;line-height:1;text-decoration:none;display:inline-flex;gap:.28em;align-items:baseline;white-space:nowrap}
 .thin{font-weight:300}.bold{font-weight:900}
+#select-region{scroll-margin-top:64px}
 /* header */
 .bar{position:sticky;top:0;z-index:200;background:var(--black);border-bottom:3px solid var(--yellow)}
 .bar-in{padding:0 var(--gut);display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:58px;flex-wrap:wrap}
