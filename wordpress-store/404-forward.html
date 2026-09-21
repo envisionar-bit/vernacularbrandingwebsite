@@ -2,7 +2,7 @@
      Any address that belongs to the main site (vernacularbranding.in), old or new spelling, is sent to the right page there. -->
 <script>
 (function () {
-  var MAIN = 'https://vernacularbranding.in';
+  var MAIN = 'https://www.vernacularbranding.in';
   var pages = ['authors', 'contact-us', 'contributors', 'exhibition', 'germany-agb', 'germany-datenschutz', 'germany-impressum', 'india-legal-notice', 'india-privacy-policy', 'india-terms', 'order-complete', 'order-germany', 'order-india', 'press', 'project', 'reception', 'site-map', 'spot-a-sign-share', 'the-book'];
   var alias = {'about-the-project': 'project', 'about-the-authors': 'authors', 'public-reception': 'reception', 'vb-contributors': 'contributors', 'press-kit': 'press', 'contact': 'contact-us', 'micro-exhibition': 'exhibition', 'spot-a-sign': 'spot-a-sign-share', 'buy-the-book': 'the-book', 'buy-in-india': 'order-india', 'buy-in-germany': 'order-germany', 'legal-notice-india': 'india-legal-notice', 'privacy-policy-india': 'india-privacy-policy', 'terms-and-conditions-india': 'india-terms', 'legal-notice-de': 'germany-impressum', 'datenschutz-de': 'germany-datenschutz', 'agb-de': 'germany-agb', 'sitemap': 'site-map', 'thank-you': 'order-complete', 'terns-and-conditions-india': 'india-terms', 'terms-conditions': 'india-terms', 'legal-notice': 'india-legal-notice', 'privacy-policy': 'india-privacy-policy', 'legal-notice-de-eu': 'germany-impressum', 'datenschutz-de-eu': 'germany-datenschutz', 'agb-de-eu': 'germany-agb', 'about': 'project', 'books': 'the-book'};
   var p = location.pathname.replace(/^\/+|\/+$/g, '').toLowerCase();
@@ -13,4 +13,4 @@
   location.replace(MAIN + '/' + p + (p === 'order-complete' ? '/' : '') + q + location.hash);
 })();
 </script>
-<noscript><p><a href="https://vernacularbranding.in/">Go to vernacularbranding.in →</a></p></noscript>
+<noscript><p><a href="https://www.vernacularbranding.in/">Go to vernacularbranding.in →</a></p></noscript>

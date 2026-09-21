@@ -1,5 +1,5 @@
 import re,subprocess,urllib.parse as U,collections,concurrent.futures as cf
-MAIN='vernacularbranding.in'; SHOP='shop.vernacularbranding.in'
+MAIN='www.vernacularbranding.in'; SHOP='shop.vernacularbranding.in'
 seedsMain=['']+['authors', 'contact-us', 'contributors', 'exhibition', 'germany-agb', 'germany-datenschutz', 'germany-impressum', 'india-legal-notice', 'india-privacy-policy', 'india-terms', 'order-germany', 'order-india', 'press', 'project', 'reception', 'site-map', 'spot-a-sign-share', 'the-book']+['order-complete/','404']
 seedsShop=['','store-india/','cart/','my-account/','product/vernacular-branding-hardcover-book/','privacy-policy-india/','terns-and-conditions-india/','contact/','legal-notice-india/']
 def get(u):
@@ -16,7 +16,7 @@ def scan(p):
         u=U.urljoin(p,raw.split('#')[0]) 
         if not u.startswith('http'): continue
         host=U.urlparse(u).netloc
-        if host in (MAIN,SHOP,'www.'+MAIN): out.append(u)
+        if host in (MAIN,SHOP,'vernacularbranding.in'): out.append(u)
     return p,c,out
 with cf.ThreadPoolExecutor(8) as ex: res=list(ex.map(scan,pages))
 for p,c,out in res:
