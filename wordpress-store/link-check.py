@@ -1,6 +1,6 @@
 import re,subprocess,urllib.parse as U,collections,concurrent.futures as cf
 MAIN='vernacularbranding.in'; SHOP='shop.vernacularbranding.in'
-seedsMain=['','about-the-project','about-the-authors','public-reception','vb-contributors','press-kit','contact','micro-exhibition','spot-a-sign','buy-the-book','buy-in-india','buy-in-germany','legal-notice-india','privacy-policy-india','terms-and-conditions-india','legal-notice-de','datenschutz-de','agb-de','sitemap','thank-you/','404']
+seedsMain=['']+['authors', 'contact-us', 'contributors', 'exhibition', 'germany-agb', 'germany-datenschutz', 'germany-impressum', 'india-legal-notice', 'india-privacy-policy', 'india-terms', 'order-germany', 'order-india', 'press', 'project', 'reception', 'site-map', 'spot-a-sign-share', 'the-book']+['order-complete/','404']
 seedsShop=['','store-india/','cart/','my-account/','product/vernacular-branding-hardcover-book/','privacy-policy-india/','terns-and-conditions-india/','contact/','legal-notice-india/']
 def get(u):
     r=subprocess.run(['curl','-s','-m','25','-o','-','-w','\n%{http_code}',u],capture_output=True,text=True); b,_,c=r.stdout.rpartition('\n'); return c,b

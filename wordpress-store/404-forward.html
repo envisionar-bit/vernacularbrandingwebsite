@@ -1,16 +1,16 @@
-<!-- Vernacular Branding: put this in a Custom HTML block on the store's "404 / Page not found" template.
-     Any address that belongs to the main site (vernacularbranding.in) but lands here is sent to the right page there. -->
+<!-- Vernacular Branding: put this in a Custom HTML block on the store's "404 / Page not found" template (updated 2026-09-21).
+     Any address that belongs to the main site (vernacularbranding.in), old or new spelling, is sent to the right page there. -->
 <script>
 (function () {
   var MAIN = 'https://vernacularbranding.in';
-  var pages = ['about-the-project','about-the-authors','public-reception','vb-contributors','press-kit','contact','micro-exhibition','spot-a-sign','buy-the-book','buy-in-india','buy-in-germany','legal-notice-india','privacy-policy-india','terms-and-conditions-india','legal-notice-de','datenschutz-de','agb-de','sitemap','thank-you'];
-  var alias = {'terns-and-conditions-india':'terms-and-conditions-india','terms-conditions':'terms-and-conditions-india','legal-notice':'legal-notice-india','privacy-policy':'privacy-policy-india','legal-notice-de-eu':'legal-notice-de','datenschutz-de-eu':'datenschutz-de','agb-de-eu':'agb-de','about':'about-the-project','books':'buy-the-book'};
+  var pages = ['authors', 'contact-us', 'contributors', 'exhibition', 'germany-agb', 'germany-datenschutz', 'germany-impressum', 'india-legal-notice', 'india-privacy-policy', 'india-terms', 'order-complete', 'order-germany', 'order-india', 'press', 'project', 'reception', 'site-map', 'spot-a-sign-share', 'the-book'];
+  var alias = {'about-the-project': 'project', 'about-the-authors': 'authors', 'public-reception': 'reception', 'vb-contributors': 'contributors', 'press-kit': 'press', 'contact': 'contact-us', 'micro-exhibition': 'exhibition', 'spot-a-sign': 'spot-a-sign-share', 'buy-the-book': 'the-book', 'buy-in-india': 'order-india', 'buy-in-germany': 'order-germany', 'legal-notice-india': 'india-legal-notice', 'privacy-policy-india': 'india-privacy-policy', 'terms-and-conditions-india': 'india-terms', 'legal-notice-de': 'germany-impressum', 'datenschutz-de': 'germany-datenschutz', 'agb-de': 'germany-agb', 'sitemap': 'site-map', 'thank-you': 'order-complete', 'terns-and-conditions-india': 'india-terms', 'terms-conditions': 'india-terms', 'legal-notice': 'india-legal-notice', 'privacy-policy': 'india-privacy-policy', 'legal-notice-de-eu': 'germany-impressum', 'datenschutz-de-eu': 'germany-datenschutz', 'agb-de-eu': 'germany-agb', 'about': 'project', 'books': 'the-book'};
   var p = location.pathname.replace(/^\/+|\/+$/g, '').toLowerCase();
   if (alias[p]) p = alias[p];
   if (pages.indexOf(p) === -1) return;
   // "from=shop" makes the address new to the browser, so an old remembered redirect cannot bounce it back here
   var q = location.search ? location.search + '&from=shop' : '?from=shop';
-  location.replace(MAIN + '/' + p + (p === 'thank-you' ? '/' : '') + q + location.hash);
+  location.replace(MAIN + '/' + p + (p === 'order-complete' ? '/' : '') + q + location.hash);
 })();
 </script>
 <noscript><p><a href="https://vernacularbranding.in/">Go to vernacularbranding.in →</a></p></noscript>
