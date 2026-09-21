@@ -1,0 +1,16 @@
+<!-- Vernacular Branding: put this in a Custom HTML block on the store's "404 / Page not found" template.
+     Any address that belongs to the main site (vernacularbranding.in) but lands here is sent to the right page there. -->
+<script>
+(function () {
+  var MAIN = 'https://vernacularbranding.in';
+  var pages = ['about-the-project','about-the-authors','public-reception','vb-contributors','press-kit','contact','micro-exhibition','spot-a-sign','buy-the-book','buy-in-india','buy-in-germany','legal-notice-india','privacy-policy-india','terms-and-conditions-india','legal-notice-de','datenschutz-de','agb-de','sitemap','thank-you'];
+  var alias = {'terns-and-conditions-india':'terms-and-conditions-india','terms-conditions':'terms-and-conditions-india','legal-notice':'legal-notice-india','privacy-policy':'privacy-policy-india','legal-notice-de-eu':'legal-notice-de','datenschutz-de-eu':'datenschutz-de','agb-de-eu':'agb-de','about':'about-the-project','books':'buy-the-book'};
+  var p = location.pathname.replace(/^\/+|\/+$/g, '').toLowerCase();
+  if (alias[p]) p = alias[p];
+  if (pages.indexOf(p) === -1) return;
+  // "from=shop" makes the address new to the browser, so an old remembered redirect cannot bounce it back here
+  var q = location.search ? location.search + '&from=shop' : '?from=shop';
+  location.replace(MAIN + '/' + p + (p === 'thank-you' ? '/' : '') + q + location.hash);
+})();
+</script>
+<noscript><p><a href="https://vernacularbranding.in/">Go to vernacularbranding.in →</a></p></noscript>
