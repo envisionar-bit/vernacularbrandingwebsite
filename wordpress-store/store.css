@@ -74,3 +74,29 @@ h2.wp-block-post-title,h3.wp-block-post-title,.wp-block-woocommerce-product-coll
 .wp-block-woocommerce-product-collection .wc-block-components-product-price,.wp-block-woocommerce-product-collection .wp-block-woocommerce-product-price{text-align:left!important;font-size:20px}
 .wp-block-woocommerce-product-collection .wp-block-button{text-align:left!important;justify-content:flex-start!important}
 .wp-block-woocommerce-product-meta{display:none!important}
+
+/* ---- Cart button in the header (always visible) ---- */
+.vbx-nav a.vbx-cart{display:inline-flex;align-items:center;gap:8px;border:2px solid var(--vb-yellow);color:var(--vb-yellow)!important;padding:9px 14px;margin:0 0 0 14px;border-bottom:2px solid var(--vb-yellow)}
+.vbx-nav a.vbx-cart:hover{background:var(--vb-yellow);color:#000!important;border-color:var(--vb-yellow)}
+.vbx-nav a.vbx-cart svg{display:block}
+.vbx-count{display:inline-block;min-width:20px;height:20px;line-height:20px;padding:0 5px;text-align:center;background:var(--vb-yellow);color:#000;font:700 11px/20px 'Poppins',sans-serif;border-radius:10px}
+.vbx-cart:hover .vbx-count{background:#000;color:var(--vb-yellow)}
+.vbx-count[hidden]{display:none}
+@media(max-width:900px){.vbx-nav a.vbx-cart{margin:6px 8px 0 0}}
+/* ---- "View cart" link after adding a book: a proper button ---- */
+a.added_to_cart,.wc-block-components-product-button__button+a,.wp-block-woocommerce-product-button a.added_to_cart,.wp-block-button .added_to_cart{display:inline-block!important;background:var(--vb-yellow)!important;color:#000!important;border:2px solid #000!important;border-radius:0!important;font-family:'Poppins',sans-serif!important;font-weight:700!important;font-size:11px!important;letter-spacing:2px!important;text-transform:uppercase!important;padding:13px 22px!important;text-decoration:none!important;margin-top:10px!important}
+a.added_to_cart:hover{background:#000!important;color:var(--vb-yellow)!important}
+/* ---- Shiprocket "Buy Now" (cart page): yellow, black text ---- */
+a.wc-block-cart__submit-button,.wc-block-cart__submit-button,.wc-block-cart__submit-button.fastrr-enhanced,a.wc-block-components-button.wc-block-cart__submit-button{background:var(--vb-yellow)!important;color:#000!important;border:2px solid #000!important;border-radius:0!important;font-size:13px!important;min-height:56px}
+.wc-block-cart__submit-button .btn-text,.wc-block-cart__submit-button .wc-block-components-button__text,.wc-block-cart__submit-button span{color:#000!important;font-family:'Poppins',sans-serif!important;font-weight:900!important;letter-spacing:2px!important;text-transform:uppercase!important}
+.wc-block-cart__submit-button:hover,.wc-block-cart__submit-button.fastrr-enhanced:hover{background:#000!important;border-color:#000!important}
+.wc-block-cart__submit-button:hover .btn-text,.wc-block-cart__submit-button:hover span{color:var(--vb-yellow)!important}
+.wc-block-cart__submit-button svg{fill:#000!important;color:#000!important}
+.wc-block-cart__submit-button:hover svg{fill:var(--vb-yellow)!important}
+/* larger, clearer cart table & quantity */
+.wc-block-cart-items,.wc-block-cart-items td,.wc-block-cart-items th{font-size:15px!important}
+.wc-block-components-product-name{font-size:16px!important}
+.wc-block-components-quantity-selector{border:2px solid #000!important;border-radius:0!important}
+.wc-block-components-quantity-selector input{border:0!important}
+.wc-block-components-quantity-selector__button{color:#000!important;font-size:18px!important}
+.wc-block-cart-item__remove-link{color:var(--vb-blue)!important;font-size:12px!important;text-decoration:underline!important}

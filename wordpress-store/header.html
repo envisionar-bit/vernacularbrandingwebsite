@@ -9,7 +9,20 @@
       <a href="https://vernacularbranding.in/vb-contributors">Contributors</a>
       <a href="https://vernacularbranding.in/press-kit">Press Kit</a>
       <a href="https://vernacularbranding.in/contact">Contact</a>
+      <a class="vbx-cart" href="https://shop.vernacularbranding.in/cart/" aria-label="View cart"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M3 4h2l2.4 11h10.2L20 7H6.2"/><circle cx="9" cy="19.5" r="1.6"/><circle cx="17" cy="19.5" r="1.6"/></svg><span>Cart</span><b class="vbx-count" hidden>0</b></a>
       <a class="vbx-buy" href="https://vernacularbranding.in/buy-the-book#select-region">Buy the book</a>
     </nav>
   </div>
 </header>
+<script>
+/* Live cart count for the header Cart button (uses WooCommerce's own Store API on this site). Harmless if blocked: the button still opens the cart. */
+(function(){
+  var badge=document.querySelector('.vbx-count');if(!badge)return;
+  function set(n){n=parseInt(n,10)||0;badge.textContent=n;badge.hidden=n<1;}
+  function load(){fetch('/wp-json/wc/store/v1/cart',{credentials:'same-origin',headers:{'Accept':'application/json'}}).then(function(r){return r.json()}).then(function(c){set(c.items_count)}).catch(function(){})}
+  load();window.addEventListener('pageshow',load);document.addEventListener('visibilitychange',function(){if(!document.hidden)load()});
+  document.addEventListener('click',function(e){if(e.target.closest&&e.target.closest('.add_to_cart_button,.single_add_to_cart_button,.wp-block-woocommerce-product-button,.wc-block-components-quantity-selector,.wc-block-cart-item__remove-link,.wc-block-components-product-button__button'))setTimeout(load,1200)});
+  document.body.addEventListener('wc-blocks_added_to_cart',load);
+  if(window.jQuery)jQuery(document.body).on('added_to_cart removed_from_cart updated_cart_totals',load);
+})();
+</script>
