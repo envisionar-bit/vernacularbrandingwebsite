@@ -4,13 +4,13 @@ Keep these 4 pages **Published** (WooCommerce and old links still need the addre
 
 | WordPress page | Slug | Send to |
 |---|---|---|
-| Contact | contact | https://www.vernacularbranding.in/contact-us |
-| LEGAL NOTICE – IN | legal-notice-india | https://www.vernacularbranding.in/india-legal-notice |
-| PRIVACY POLICY – IN | privacy-policy-india | https://www.vernacularbranding.in/india-privacy-policy |
-| T & C | terns-and-conditions-india | https://www.vernacularbranding.in/india-terms |
+| Contact | contact | https://vernacularbranding.in/contact-us |
+| LEGAL NOTICE – IN | legal-notice-india | https://vernacularbranding.in/india-legal-notice |
+| PRIVACY POLICY – IN | privacy-policy-india | https://vernacularbranding.in/india-privacy-policy |
+| T & C | terns-and-conditions-india | https://vernacularbranding.in/india-terms |
 
 ```html
-<meta http-equiv="refresh" content="0; url=https://www.vernacularbranding.in/india-privacy-policy">
-<script>window.location.replace("https://www.vernacularbranding.in/india-privacy-policy");</script>
-<p>This page has moved. <a href="https://www.vernacularbranding.in/india-privacy-policy">Continue →</a></p>
+<meta http-equiv="refresh" content="0; url=https://vernacularbranding.in/india-privacy-policy">
+<script>window.location.replace("https://vernacularbranding.in/india-privacy-policy");</script>
+<p>This page has moved. <a href="https://vernacularbranding.in/india-privacy-policy">Continue →</a></p>
 ```

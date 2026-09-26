@@ -1,5 +1,5 @@
 import re,subprocess,urllib.parse as U,collections,concurrent.futures as cf
-MAIN='www.vernacularbranding.in'; SHOP='shop.vernacularbranding.in'
+MAIN='vernacularbranding.in'; SHOP='shop.vernacularbranding.in'
 seedsMain=['']+['authors', 'contact-us', 'contributors', 'exhibition', 'germany-agb', 'germany-datenschutz', 'germany-impressum', 'india-legal-notice', 'india-privacy-policy', 'india-terms', 'order-germany', 'order-india', 'press', 'project', 'reception', 'site-map', 'spot-a-sign-share', 'the-book']+['order-complete/','404']
 seedsShop=['','store-india/','cart/','my-account/','product/vernacular-branding-hardcover-book/','privacy-policy-india/','terns-and-conditions-india/','contact/','legal-notice-india/']
 def get(u):
